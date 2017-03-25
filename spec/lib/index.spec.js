@@ -32,7 +32,7 @@ describe("index", function() {
 
   describe("#adaptor", function() {
     it("returns an instance of the Adaptor", function() {
-      expect(index.adaptor()).to.be.instanceOf(Adaptor);
+      expect(index.adaptor({ip:"192.168.2.1"})).to.be.instanceOf(Adaptor);
     });
   });
 });
